@@ -7,9 +7,9 @@
 
   <md-icon [mdMenuTriggerFor]="menu" class="menuBtn">expand_more</md-icon>
   <md-menu #menu="mdMenu">
-    <button md-menu-item>About</button>
-    <button md-menu-item>Login</button>
-    <button md-menu-item>Recharge Card</button>
+    <button md-menu-item (click)="goToAbout()">About</button>
+    <button md-menu-item (click)="goToLogin()">Login</button>
+    <button md-menu-item (click)="goToRecharge()">Recharge Card</button>
   </md-menu>
 </md-toolbar>
 
