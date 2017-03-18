@@ -1,5 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <md-icon>credit_card</md-icon>
+  <span>Recharge Card</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+
+  <md-icon [mdMenuTriggerFor]="menu" class="menuBtn">expand_more</md-icon>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item>About</button>
+    <button md-menu-item>Login</button>
+    <button md-menu-item>Recharge Card</button>
+  </md-menu>
+</md-toolbar>
+
 <!--Routed components will be displayed here-->
 <router-outlet></router-outlet>
